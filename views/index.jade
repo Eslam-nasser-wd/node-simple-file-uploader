@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 File upload
+  form#form_validation(action='/upload', method='post', enctype='multipart/form-data')
+    input(name='postImage', type='file')
+    |  
+    input(type='submit', value='Upload...')
